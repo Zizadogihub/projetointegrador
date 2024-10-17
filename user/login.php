@@ -26,12 +26,36 @@
     if (!$stmt->execute()) {
         die("Erro na execuçao da consulta: " . $stmt->error);
     }
- }
+  }
+
+
+
+$result = $stmt->get_result();
+
+if($result->num_rows > 0) {
+  $row = $result->fetch_assoc();
+  
+
+  //verificar senha com password_verify
+  if (password_verify($senha, $row['senha'])) {
+    echo "Login bem-sucedido!";
+    //aqui inicia-se a sessão e redireciona p area restrita
+    session_start();
+    $_SESSION['usuario_logado'] = $row['id'];
+    header("Location: area_restrita.php");
+    exit();
+  } else {
+echo "Email ou senha inválidos.";
+  }
+} else {
+  echo "Email ou senha inválidos.";
+}
+
+$stmt->close();
+}
+$conn->close();
 ?>
-
-
-
-
+<form method="post">
 
 
 
