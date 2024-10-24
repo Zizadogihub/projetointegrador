@@ -1,1 +1,1 @@
-sscanf
+if (isset($_))
