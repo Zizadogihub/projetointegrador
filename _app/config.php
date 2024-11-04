@@ -4,7 +4,7 @@
 $server = "localhost";
 $user = "root";
 $password = "";
-$database = "happytailsaddoption";
+$database = "happy_tail_adoption";
 
 //criar conexao
 $conn = new mysqli($server, $user, $password, $database);
