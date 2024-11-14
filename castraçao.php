@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Pagina inicial</title>
+  <title>Castraçao</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,7 +16,7 @@
   <style>
     #barra {
       color: rgb(204, 157, 95);
-
+      
 
     }
 
@@ -34,48 +34,31 @@
       border-radius: 10px 10px 10px 10px;
       height: 90px;
       width: 1400px;
-      margin: 40px 290px;
+      margin: 40px 210px;
       box-shadow: rgba(59, 59, 59, 0.56) 0px 22px 70px 4px;
       font-family:Concert One ;
       font-size: 20px;
     }
 
     #palavras{
-    margin: 0px 200px;
+    margin: 0px 230px;
 
    }
-   
 
+     body {
+      background-color: rgb(250, 245, 245);
+    }
 
-body{
-  background-color:rgb(250, 245, 245);
-}
-   
-  
-
-   #carroseul{
-    width: 1800px;
-    margin: 0px 50px;
-   }
-
-   
-
-   #creditos{
-    background-color:rgb(250, 245, 245);
-    height: 300px;
-    width: 1900px;
-   }
-
- 
-   #thick {
+    
+    #thick {
             border-color:rgb(204, 157, 95) ;
             border-bottom-style: solid;
             border-bottom-width: medium;
             width: 790px; 
-            margin: 0px 600px;  
+            margin: 0px 595px;  
             opacity: 50%;         
         }
-
+      
         .list-group-item{
             background-color:rgb(250, 245, 245);
             border-bottom-color: rgb(204, 157, 95);
@@ -93,221 +76,230 @@ body{
         position: absolute;
         }
 
-   .a{
-    color:rgb(204, 157, 95);
+        .creditos1{
+            width: 1900px;
+            height:450px;
+            border-radius:50%;
+            top:4350px;
+            position:absolute;
+            
+            background-color:rgb(204, 157, 95);
+           
+        }
+        
+        .creditos2{
+            width: 1900px;
+            height:450px;
+            margin-top:100px;
+           
+            background-color:rgb(204, 157, 95);
+        }
+
+        .a{
+          color:rgb(204, 157, 95);
           text-decoration: none;
-   }
-
-   #titulo1{
-    widht:500px
-    height: 400px
-    border: 4px solid black;
-    margin: 300px 500px;
-
-   }
-
-   .botao{
-    transition: transform 1s;
-   }
-
-   .botao:hover{
-    transform: scale(1.1);
-   }
-
+        }
   </style>
- 
 </head>
 
 <body>
 
-
-  <nav class="navbar navbar-expand-lg bg-body-tertiary" id="parte" >
+<nav class="navbar navbar-expand-lg bg-body-tertiary" id="parte" >
    
-    <div class="container-fluid" id="palavras">
-     
-      <a class="navbar-brand" id="barra" style="font-family:Chewy; font-size: xx-large;">Happy Tail Adoption</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav" >
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="http://localhost/projetointegrador/paginainicial/index.php" style="">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Adoção</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="http://localhost/projetointegrador/paginainicial/doe.php">Doação</a>
-          </li>
-          <li class="nav-item"></li>
-            <a class="nav-link" href="http://localhost/projetointegrador/user/login.php">login</a>
-          </li>
-          
-          <nav class="navbar bg-body-tertiary" >
-            <div class="container-fluid" >
-              <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Pesquisar" style="font-family:Concert One; width: 160px;">
-                <button class="btn btn-outline-success" type="submit" style="background-color:transparent; border-color:transparent; width:100px;  "><img src="search-heart.svg" style=" height:30px;" ></button>
-              </form>
-            </div>
-          </nav>
-        </ul>
-        
-      </div>
-    </div>
-  
-  </nav>
-  
-  
-  <br>
-  
-  <div id="carroseul">
-    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" >
-        <div class="carousel-inner" " >
-          <div class="carousel-item active" data-bs-interval="10000">
-          <button class="botao" style="border-radius: 20px 20px 20px 20px; width: 200px; height: 40px; opacity:80%; background-color: #be9673; color: white; border-color: #be9673;  margin: 450px 290px; position:absolute;  ">Adote</button>
-            <img src="adote.png" class="d-block w-100" alt="..." style="relative;">
-            
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img src="conhecanossotrabalho.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="gatinho.png" class="d-block w-100" alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+   <div class="container-fluid" id="palavras">
+    
+     <a class="navbar-brand" id="barra" style="font-family:Chewy; font-size: xx-large;">Happy Tail Adoption</a>
+     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+     </button>
+     <div class="collapse navbar-collapse" id="navbarNav" >
+       <ul class="navbar-nav">
+         <li class="nav-item">
+           <a class="nav-link " aria-current="page" href="#" style="">Inicio</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="#">Adoção</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="#">Ajude-nós</a>
+         </li>
+         <li class="nav-item"></li>
+           <a class="nav-link" href="#">Login</a>
+         </li>
+         <nav class="navbar bg-body-tertiary" >
+           <div class="container-fluid" >
+             <form class="d-flex" role="search">
+               <input class="form-control me-2" type="search" placeholder="Pesquisar" style="font-family:Concert One; width: 160px;">
+               <button class="btn btn-outline-success" type="submit" style="background-color:transparent; border-color:transparent; width:100px;  "><img src="search-heart.svg" style=" height:30px;" ></button>
+             </form>
+           </div>
+         </nav>
+       </ul>
+       
+     </div>
+   </div>
 
-  </div>
+ </nav>
 <br>
 
+
+<div class="titulo1">
+   <img src="castraçao.png" style="width: 1900px;">
+</div>
+<br>
+<br>
 <div class="lista">
 <ul class="list-group list-group-flush">
-  <li class="list-group-item"><a class="a" href="#conheça">Conheça mais sobre a Happy Tails Addoption</a></li>
-  <li class="list-group-item"><a class="a" href="#consideraçao">Considerações sobre a adoção</a></li>
-  <li class="list-group-item"><a class="a" href="#antes">O que considerar antes de adotar</a></li>
-  <li class="list-group-item"><a class="a" href="#comoadotar">Como adotar um cachorro online</a></li>
-  
+  <li class="list-group-item"><a class="a" href="#comoefeito">Como é feita a castração de cães e gatos?</a></li>
+  <li class="list-group-item"><a class="a" href="#quandofazer">Quando fazer a castração?</a></li>
+  <li class="list-group-item"><a class="a" href="#Exames">Exames prévios à castração do animal</a></li>
+  <li class="list-group-item"><a class="a" href="#tratamento">Boas Práticas no Ambiente Cirúrgico: o fluxo controlado</a></li>
+  <li class="list-group-item"><a class="a" href="#importancia">A Importância do Anestesista</a></li>
+  <li class="list-group-item"><a class="a" href="#poscirurgico">O Pós-Cirúrgico da Castração de Cães e Gatos</a></li>
 </ul>
+    </div>
+<div  class="texto" style="width: 800px; height: 150px; margin:0px 600px; ">
+<p>A castração é uma das medidas mais importantes para controle populacional de cães e gatos. A cirurgia também ajuda a evitar diversos problemas de saúde, como os tumores de testículo, próstata e mamários. Alguns estudos apontam que fêmeas castradas antes do primeiro cio têm 90% menos de chances de desenvolver câncer de mama.
+
+Os efeitos comportamentais da castração também são bastante importantes. Cães e gatos castrados tendem a ficar mais calmos, caseiros e menos agressivos. A cirurgia pode reduzir o hábito de fugir e de urinar pelos cantos.
+
+Vale lembrar que, apesar de bastante comum, a castração é um procedimento invasivo e, como tal, exige cuidados. Donos de cães e gatos devem ficar atentos, especialmente às boas práticas no ambiente cirúrgico. Nós falaremos mais delas ao longo do texto.</p>
+</div>
+<br>
+<br>
+<br>
+<div id="comoefeito" class="titulos" style="width:800px; margin:0px 600px; font-size:50px; color:rgb(204, 157, 95);">
+Como é feita a castração de cães e gatos?
+</div>
+<br>
+<div id="thick">    
+</div>
+<br>
+<br>
+<div class="texto" style="width: 800px; height: 150px; margin:0px 600px; ">
+<p>A técnica mais tradicional de castração dura cerca de 30 minutos. Envolve a retirada das gônadas dos animais, local das células produtoras de hormônios sexuais. Logo, a produção de hormônios nestas regiões também é interrompida.
+
+Nos machos, tanto em cães quanto em gatos, a operação é menos invasiva. Consiste na retirada dos testículos – o que implica numa redução expressiva de testosterona. Já nas fêmeas – de ambas as espécies – é necessário realizar uma incisão no abdome para remoção do útero e dos ovários. O procedimento que reduz a produção de estrógeno e progesterona.</p>
+</div>
+<br>
+<br>
+<div id="quandofazer" class="titulos" style="width:800px; margin:0px 600px; font-size:50px; color:rgb(204, 157, 95);">
+Quando fazer a castração?
+</div>
+<br>
+<div id="thick">    
+</div>
+<br>
+<br>
+<div class="texto" style="width: 800px; height: 150px; margin:0px 600px; ">
+<p>  Todos os cães e gatos podem ser castrados. No entanto, o período indicado para fazer a castração é bastante relativo. Depende, entre outros fatores, da maturação hormonal e do porte do Pet.
+
+Em alguns casos, a castração pode ser feita ainda na fase de filhotes. Contudo, é interessante que o seu cão ou o gato já tenha tomado todas as vacinas. Este cuidado visa reduzir o risco de contaminação no ambiente hospitalar.
+
+Buscar orientação do médico veterinário de confiança sobre o seu caso é a melhor estratégia.</p>
+</div>
+<br>
+<div  id="Exames" class="titulos" style="width:800px; margin:0px 600px; font-size:50px; color:rgb(204, 157, 95);">
+Exames prévios à castração do animal
+</div>
+<br>
+<div id="thick">    
+</div>
+<br>
+<br>
+<div  class="texto" style="width: 800px; height: 100px; margin:0px 600px; ">
+<p>  Seu animal merece ser tratado com todo respeito e atenção. Por isso, é necessário que, antes do procedimento, o médico veterinário avalie o seu pet através de exames de sangue e cardiológicos. Somente assim ele conhecerá as reais condições de saúde do paciente e poderá trabalhar com segurança.</p>
+</div>
+<br>
+<div id="tratamento" class="titulos" style="width:800px; margin:0px 600px; font-size:50px; color:rgb(204, 157, 95);">
+Boas Práticas no Ambiente Cirúrgico: o fluxo controlado
+</div>
+
+<div id="thick">    
+</div>
+<br>
+<br>
+<div class="texto" style="width: 800px; height: 150px; margin:0px 600px; ">
+<p> A cirurgia de castração de animais não deve ser realizada em ambiente ambulatorial. Seu cão ou gato deve ser encaminhado para um ambiente hospitalar, com os profissionais e equipamentos necessários. O preparo para evitar riscos biológicos tanto para o pet quanto para os seres-humanos deve ser constante. Neste post aqui, falamos sobre os exames pré-anestésicos e como funciona o procedimento de Anestesia. </p>
+
+<div class="texto" style="width: 400px; height: 150px; margin:0px 100px; ">
+<p><i>Um bom centro cirúrgico tem como prioridade a questão da assepsia (limpeza). O fluxo controlado também é fundamental: o paciente deve ter um local específico para o preparo inicial. A equipe deve ter um local exclusivo para fazer a troca de roupas, por exemplo. Todos devem utilizar toucas e luvas adequadas. A sala de cirurgia deve ter fluxo controlado e possuir barreiras físicas para evitar a entrada de agentes contaminantes.</i></p>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div id="importancia" class="titulos" style="width:800px; margin:0px 600px; font-size:50px; color:rgb(204, 157, 95);">
+A Importância do Anestesista
+</div>
+<br>
+<div id="thick">    
+</div>
+<br>
+<br>
+<div class="texto" style="width: 800px; height: 150px; margin:0px 600px; ">
+<p> Imagine sentir dor e não poder reclamar. Infelizmente, é isso que acontece com muitos animais quando a castração é feita sem a presença de um anestesista. Sedativos e contenção química podem fazer o animal ficar imóvel e até dormir, mas não são suficientes para garantir o conforto do seu pet.
+
+Quando for castrar o seu cão ou o seu gato, exija a presença de um profissional anestesista. Com isso, você garante o bem estar do seu companheiro, evita traumas, garante o máximo possível de segurança e  uma recuperação mais rápida e feliz. </p>
+
+<div class="texto" style="width: 400px; height: 150px; margin:0px 100px; ">
+<p><i>
+Lembre-se: O tamanho da incisão feita para a castração não indica sinal de qualidade do procedimento. É comum presenciarmos animais que sofreram castração através de pequenas incisões mas que, por conta disso, precisaram retornar ao centro cirúrgico para correção de erros. Ligaduras incorretas e resquícios de ovários esquecidos estão entre os principais problemas.
+</i></p>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div id="poscirurgico" class="titulos" style="width:800px; margin:0px 600px; font-size:50px; color:rgb(204, 157, 95);">
+O Pós-Cirúrgico da Castração de Cães e Gatos
+</div>
+<br>
+<div id="thick">    
+</div>
+<br>
+<br>
+
+<div class="texto" style="width: 800px; height: 150px; margin:0px 600px; ">
+<p> A cicatrização da cirurgia de castração deve acontecer entre 7 e 10 dias após o procedimento. Um curativo especial é feito no local da incisão. Indica-se o uso de roupa própria e até mesmo de um colar elizabetano para evitar que o pet lamba ou arranque os pontos. É importante que o dono do Pet tenha estes itens em mãos quando for buscá-lo.<br><br>
+
+Normalmente, o animal retorna à rotina normal já no segundo dia pós-castração. Pede-se apenas para evitar grandes esforços e reduzir os passeios. Duas avaliações devem ser feitas durante a recuperação: uma após 3 dias e outra após 5 ou 7 dias, para a retirada do curativo.<br><br>
+
+O Pet pode ser medicado com antibiótico no dia operação. No entanto, nos centros que seguem todas as boas práticas no ambiente cirúrgico, o risco de infecções é bastante reduzido e o uso de antibióticos pode ser descartado, após o dia da cirurgia.<br><br>
+
+Alguns animais podem sentir incômodos, como sonolência, falta de apetite, incontinência urinária e até vômitos após a castração. Alguns medicamentos analgésicos pode ser um dos motivos. Caso os sintomas persistam, ou ocorra um aumento de volume drástico na região da cirurgia, o cirurgião que realizou a operação deverá ser procurado. O veterinário responsável deverá também receitar analgésicos e anti-inflamatórios para reduzir eventuais dores do seu Pet.</p>
+
+
     
-      <br>
-    <div id="conheça" class="titulo" style="width:800px; margin:0px 600px; font-size:40px; color:rgb(204, 157, 95);" >
-    Conheça mais sobre a Happy Tails Addoption
-    </div>
-    <br>
-<div id="thick">    
 </div>
 <br>
+<br> 
 <br>
-    <div  class="texto" style="width: 800px; height: 150px; margin:0px 600px; ">
-    <p  >O Happy Tails Adoption é um site dedicado a conectar animais abandonados e em situação de vulnerabilidade com famílias amorosas que buscam um novo amigo. Com uma interface amigável e intuitiva, o site permite que os usuários naveguem facilmente por uma variedade de perfis de animais disponíveis para adoção, incluindo cães e gatos de diferentes idades, tamanhos e temperamentos.
-
-      Uma das grandes vantagens do Happy Tails é o compromisso com o bem-estar animal. Todos os pets disponíveis para adoção passam por um processo de avaliação e cuidados veterinários, garantindo que estejam saudáveis e prontos para iniciar uma nova fase de suas vidas. Além disso, o site oferece informações detalhadas sobre cada animal, incluindo suas características, necessidades especiais e dicas para uma adaptação suave ao novo lar.
-      
-      O Happy Tails também promove a conscientização sobre a importância da adoção responsável. Oferecendo recursos educativos, como guias sobre cuidados e treinamento, o site ajuda os adotantes a se prepararem para a chegada de um novo amigo de quatro patas. A comunidade do Happy Tails é vibrante e acolhedora, incentivando a interação entre adotantes, voluntários e apaixonados por animais.
-      
-      Ao escolher o Happy Tails Adoption, você não está apenas resgatando um animal; está transformando vidas e contribuindo para a construção de uma sociedade mais solidária e consciente. A cada adoção, um novo capítulo se inicia, e cada lar se enche de amor e alegria.
-      
-      Se você está pensando em adotar, visite o Happy Tails Adoption e descubra como um simples gesto pode fazer toda a diferença na vida de um animal em busca de um lar.
-    </p>
-  </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
-    <div>
-    <iframe style="width:560px; height:315px; margin:0px 660px;" src="https://www.youtube.com/embed/bKIBpmR4flY?si=svv2khVDUpxjEb2u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
-  </div>
- <br>
- <br>
- <div id="consideraçao" class="titulo" style="width:800px; margin:0px 600px; font-size:40px; color:rgb(204, 157, 95);" >
-    Considerações sobre a adoção
-    </div>
-    <br>
-<div id="thick">    
+<br> 
+<br>
+<br> 
+<br>
+<br> 
+<br>
+<br> 
+<br>
+<br>
+<div class="video" style="width: 800px; height: 150px; margin:0px 690px; ">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8BN43fUYoIs?si=J-rNTYyRrihnR9UN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
 </div>
+
 <br>
-<br>
-    <div  class="texto" style="width: 800px; height: 150px; margin:0px 600px; ">
-    <p  >
-Adotar cachorro online sem que seja necessário visitar abrigos de animais se tornou uma realidade já há alguns anos. Mas foi com a pandemia da Covid-19, em 2020, que os índices de adoção virtual aumentaram de maneira significativa.
-
-A onda de adoções online de cachorro, e até mesmo adoção de gatos, foi motivada pela necessidade de evitar aglomerações de pessoas e de ampliar o risco de contágio por coronavírus.
-
-O aumento também se deu pelo isolamento social, que fez com que várias pessoas ficassem em casa e sentissem falta da companhia de um “melhor amigo”.
-    </p>
-  </div>
-    <br>
-    <br>
-    <div id="antes" class="titulo" style="width:800px; margin:0px 600px; font-size:40px; color:rgb(204, 157, 95);" >
-    O que considerar antes de adotar
-    </div>
-    <br>
-<div id="thick">    
-</div>
-<br>
-<br>
-    <div  class="texto" style="width: 800px; height: 150px; margin:0px 600px; ">
-    <p  >
-    Adotar um cachorro é uma grande responsabilidade. Afinal, o animal ficará com você por muito tempo – já que cães vivem cerca de 15 anos - e dependerá totalmente da sua família para dar carinho, ração, levar ao veterinário, etc.<br>
-
-Por isso, antes de concluir a sua adoção, avalie alguns pontos:<br>
-
-Você e sua família têm disponibilidade e tempo para receber um animal em casa?<br><br>
-
-Têm condições de arcar com os custos de um novo pet? Um cachorro demanda gastos mensais, sendo o custo médio de um cachorro de R$ R$ 338,76, segundo dados do Instituto Pet Brasil.<br><br>
-
-Sua casa tem espaço para que seu pet possa brincar e correr? Se não tiver, você tem como levá-lo à rua ou a uma praça diariamente? Principalmente cães filhotes são muito agitados e precisam gastar energia.<br><br>
-
-Como é o seu estilo de vida? Cães necessitam de atenção, portanto, se você passa pouco tempo na sua casa ou se tem o costume de viajar bastante, ele poderá se sentir solitário e triste.
-    </p>
-  </div>
-  <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div id="comoadotar" class="titulo" style="width:800px; margin:0px 600px; font-size:40px; color:rgb(204, 157, 95);" >
-    Como adotar um cachorro online
-    </div>
-    <br>
-<div id="thick">    
-</div>
-<br>
-<br>
-    <div  class="texto" style="width: 800px; height: 150px; margin:0px 600px; ">
-    <p  >
-    Existem diversos sites de ONGs e abrigos de cães e gatos que fazem a mediação entre o tutor e os animais abandonados ou resgatados das ruas. Além disso, é possível adotar animais online utilizando aplicativos para celular.<br><br>
-
-Por esses canais, você poderá ver a foto dos animais disponíveis para adoção, além de informações sobre eles, como nome, raça, porte, se é macho ou fêmea, se testou negativo para Leishmaniose ou outras doenças.<br><br>
-
-Para que o processo de adoção de cachorro feito à distância seja responsável e a instituição possa garantir que o novo lar do animal será confiável, são feitos alguns procedimentos – todos online, é claro.
-    </p>
-  </div>
-
-  <br>
 <br>
 <br>
 <br>
@@ -386,9 +378,6 @@ Para que o processo de adoção de cachorro feito à distância seja responsáve
 </ul>
 </div>
 
-
-
-  
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
